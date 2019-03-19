@@ -1,0 +1,519 @@
+<html>
+
+	<head>
+		<title>Vue 爬坑手册</title>
+		<basefont face="微软雅黑" size="2" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta name="exporter-version" content="Evernote Windows/308094 (zh-CN, MWS); Windows/10.0.0 (Win64);" />
+			<style>
+			@media print {
+				#ghostery-purple-box {
+					display: none !important
+				}
+			}
+		</style>
+		<style>
+			body,
+			td {
+				font-family: 微软雅黑;
+				font-size: 10pt;
+			}
+		</style>
+		<style type="text/css">
+			#app {
+				font-family: 'Avenir', Helvetica, Arial, sans-serif;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				text-align: center;
+				color: #2c3e50;
+				margin-top: 60px;
+			}
+		</style>
+		<style type="text/css">
+			h1[data-v-656039f0],
+			h2[data-v-656039f0] {
+				font-weight: normal;
+			}
+			
+			ul[data-v-656039f0] {
+				list-style-type: none;
+				padding: 0;
+			}
+			
+			li[data-v-656039f0] {
+				display: inline-block;
+				margin: 0 10px;
+			}
+			
+			a[data-v-656039f0] {
+				color: #42b983;
+			}
+		</style>
+        <!-- built files will be auto injected -->		
+		<script src="assets/js/layui.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+                <script>
+                 $(document).ready(function(){
+                   $("center").hide();
+                   $("center").remove();
+                 });
+               </script>
+	</head>
+
+	<body>
+		<a name="404" />
+
+		<div>
+			<span><div><div style="text-align: center;"><span style="font-size: 20pt; font-family: 微软雅黑; font-weight: bold;">实用的</span><span style="font-size: 20pt; font-family: &quot;Calibri Light&quot;; font-weight: bold;">vue</span><span style="font-size: 20pt; font-family: 微软雅黑; font-weight: bold;">插件大汇总</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt;"> </span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt;"> </span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt;">Vue是一个构建数据驱动的 web 界面的渐进式框架。Vue.js 的目标是通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件特别整理了常用的vue插件，来了个大汇总，方便查找使用，便于工作和学习。很全的vue插件汇总，赶紧收藏下吧！</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0);"><span style="font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0); font-weight: bold;">一、UI组件及框架</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">element</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 饿了么出品的Vue2的web UI工具套件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">mint-ui</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- Vue2的移动UI元素</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">iview</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 基于 Vuejs 的开源 UI 组件库</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vux-ui</span> <span style="font-family: 微软雅黑; font-size: 11pt;">-Vue.js 移动端 UI 组件库</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">Keen-UI</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 轻量级的基本UI组件合集</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-material</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 通过Vue Material和Vue 2建立精美的app应用</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">muse-ui</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 三端样式一致的响应式 UI 库</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vuetify</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 为移动而生的Vue JS 2组件框架</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vonic</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 快速构建移动端单页应用</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-blu</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 帮助你轻松创建web应用</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-multiselect</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- Vue.js选择框解决方案</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">VueCircleMenu</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 漂亮的vue圆环菜单</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-chat</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- vuejs和vuex及webpack的聊天示例</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">radon-ui</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 快速开发产品的Vue组件库</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-waterfall</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- Vue.js的瀑布布局组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-carbon</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 基于 vue 开发MD风格的移动端</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-beauty</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 由vue和ant design创建的优美UI组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">bootstrap-vue</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 应用于Vuejs2的Twitter的Bootstrap 4组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vueAdmin</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 基于vuejs2和element的简单的管理员模板</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-ztree</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 用 vue 写的树层级组件vue-tree - vue树视图组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-tabs</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 多tab页轻型框架</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0);"><span style="font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0); font-weight: bold;">二、滚动scroll组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-scroller</span> <span style="font-family: 微软雅黑; font-size: 11pt; color: black;">- Vonic UI的功能性组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-mugen-scroll</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 无限滚动组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-infinite-loading</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- VueJS的无限滚动插件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-virtual-scroller</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 带任意数目数据的顺畅的滚动</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-infinite-scroll</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- VueJS的无限滚动指令</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-scrollbar</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 最简单的滚动区域组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-scroll</span> <span style="font-family: 微软雅黑; font-size: 11pt; color: black;">- vue滚动vue-pull-to-refresh - Vue2的上拉下拉</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">mint-loadmore</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- VueJS的双向下拉刷新组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-smoothscroll</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- smoothscroll的VueJS版本</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0);"><span style="font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0); font-weight: bold;">三、slider组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-awesome-swiper</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- vue.js触摸滑动组件，js插件swiper的vue版本</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-slick</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 实现流畅轮播框的vue组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-swipe</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- VueJS触摸滑块</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-swiper</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 易于使用的滑块组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-images</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 显示一组图片的lightbox组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-carousel-3d</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- VueJS的3D轮播组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-slide</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- vue轻量级滑动组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-slider</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- vue 滑动组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-m-carousel</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- vue 移动端轮播组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">dd-vue-component</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 订单来了的公共组件库</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-easy-slider</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- Vue 2.x的滑块组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0);"><span style="font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0); font-weight: bold;">四、编辑器</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">markcook</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 好看的markdown编辑器</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">eme</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 优雅的Markdown编辑器</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-syntax-highlight</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- Sublime Text语法高亮</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-quill-editor</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 基于Quill适用于Vue2的富文本编辑器</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">Vueditor</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 所见即所得的编辑器</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-html5-editor</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- html5所见即所得编辑器</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue2-editor</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- HTML编辑器</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-simplemde</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- VueJS的Markdown编辑器组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-quill</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- vue组件构建quill编辑器</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0);"><span style="font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0); font-weight: bold;">五、图表</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-table</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 简化数据表格</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-chartjs</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- vue中的Chartjs的封装</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-charts</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 轻松渲染一个图表</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-chart</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 强大的高速的vue图表解析</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-highcharts</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- HighCharts组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">chartjs</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- Vue Bulma的chartjs组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-chartkick</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- VueJS一行代码实现优美图表</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0);"><span style="font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0); font-weight: bold;">六、日历</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-calendar</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 日期选择插件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-datepicker</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 日历和日期选择组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-datetime-picker</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 日期时间选择控件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue2-calendar</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 支持lunar和日期事件的日期选择器</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-fullcalendar</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 基于vue.js的全日历组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-datepicker</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 漂亮的Vue日期选择器组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">datepicker</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 基于flatpickr的时间选择组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue2-timepicker</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 下拉时间选择器</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-date-picker</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- VueJS日期选择器组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-datepicker-simple</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 基于vue的日期选择器</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0);"><span style="font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0); font-weight: bold;">七、地址选择</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-city</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 城市选择器</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-region-picker</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 选择中国的省份市和地区</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0);"><span style="font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0); font-weight: bold;">八、地图</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-amap</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 基于Vue 2和高德地图的地图组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-google-maps</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 带有双向数据绑定Google地图组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-baidu-map</span><span style="font-family: 微软雅黑; font-size: 11pt;">- 基于 Vue 2的百度地图组件库</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-cmap</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- Vue China map可视化组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0);"><span style="font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0); font-weight: bold;">九、播放器</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-video-player</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- VueJS视频及直播播放器</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-video</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- Vue.js的HTML5视频播放器</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-music-master</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- vue手机端网页音乐播放器</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0);"><span style="font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0); font-weight: bold;">十、文件上传</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-upload-component</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- Vuejs文件上传组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-core-image-upload</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 轻量级的vue上传插件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-dropzone</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 用于文件上传的Vue组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0);"><span style="font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0); font-weight: bold;">十一、图片处理</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-lazyload-img</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 移动优化的vue图片懒加载插件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-image-crop-upload</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- vue图片剪裁上传组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-svgicon</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 创建svg图标组件的工具</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-img-loader</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 图片加载UI组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-image-clip</span><span style="font-family: 微软雅黑; font-size: 11pt;">- 基于vue的图像剪辑组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-progressive-image</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- Vue的渐进图像加载插件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0);"><span style="font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0); font-weight: bold;">十二、提示</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-toast-mobile</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- VueJS的toast插件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-msgbox</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- vuejs的消息框</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-tooltip</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 带绑定信息提示的提示工具</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-verify-pop</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 带气泡提示的vue校验插件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0);"><span style="font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0); font-weight: bold;">十三、进度条</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-radial-progress</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- Vue.js放射性进度条组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-progressbar</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- vue轻量级进度条</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue2-loading-bar</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 最简单的仿Youtube加载条视图</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0);"><span style="font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0); font-weight: bold;">十四、分页</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vuejs-paginate</span><span style="font-family: 微软雅黑; font-size: 11pt;">   一个简单的分页的组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-paginate</span><span style="font-family: 微软雅黑; font-size: 11pt;">   一个复杂的分页的组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0);"><span style="font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0); font-weight: bold;">十五、开发框架汇总</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-admin</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- Vue管理面板框架</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">electron-vue</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- Electron及VueJS快速启动样板</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-2.0-boilerplate</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- Vue2单页应用样板</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-webgulp</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 仿VueJS Vue loader示例</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-bulma</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 轻量级高性能MVVM Admin UI框架</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-spa-template</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 前后端分离后的单页应用开发</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">Framework7-Vue</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- VueJS与Framework7结合</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-element-starter</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- vue启动页</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0);"><span style="font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0); font-weight: bold;">十六、实用库汇总</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vuelidate</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 简单轻量级的基于模块的Vue.js验证</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">qingcheng</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- qingcheng主题</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vuex</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 专为 Vue.js 应用程序开发的状态管理模式</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-axios</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 将axios整合到VueJS的封装</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-desktop</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 创建管理面板网站的UI库</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-meta</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 管理app的meta信息</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">avoriaz</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- VueJS测试实用工具库</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-framework7</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 结合VueJS使用的Framework7组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-lazy-render</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 用于Vue组件的延迟渲染</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-svg-icon</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- vue2的可变彩色svg图标方案</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-online</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- reactive的在线和离线组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-password-strength-meter</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 交互式密码强度计</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vuep</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 用实时编辑和预览来渲染Vue组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-bootstrap-modal</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- vue的Bootstrap样式组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">element-admin</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 支持 vuecli 的 Element UI 的后台模板</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-shortkey</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 应用于Vue.js的Vue-ShortKey 插件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">cleave</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 基于cleave.js的Cleave组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-events</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 简化事件的VueJS插件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">http-vue-loader</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 从html及js环境加载vue文件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-electron</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 将选择的API封装到Vue对象中的插件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-router-transition</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 页面过渡插件vuemit - 处理VueJS事件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-cordova</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- Cordova的VueJS插件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-qart</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 用于qartjs的Vue2指令</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-websocket</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- VueJS的Websocket插件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-gesture</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- VueJS的手势事件插件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-local-storage</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 具有类型支持的Vuejs本地储存插件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">lazy-vue</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 懒加载图片</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-lazyloadImg</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 图片懒加载插件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-bus</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- VueJS的事件总线</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-observe-visibility</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 当元素在页面上可见或隐藏时检测</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-notifications</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 非阻塞通知库</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">v-media-query</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- vue中添加用于配合媒体查询的方法</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vuex-shared-mutations</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 分享某种Vuex mutations</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-lazy-component</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 懒加载组件或者元素的Vue指令</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-reactive-storage</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- vue插件的Reactive层</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-ts-loader</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 在Vue装载机检查脚本</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-pagination-2</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 简单通用的分页组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vuex-i18n</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 定位插件Vue.resize - 检测HTML调整大小事件的vue指令</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-zoombox</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 一个高级zoombox</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">leo-vue-validator</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 异步的表单验证组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">modal</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- Vue Bulma的modal组件Famous-Vue - Famous库的vue组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-input-autosize</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 基于内容自动调整文本输入的大小</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-file-base64</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 将文件转换为Base64的vue组件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">Vue-Easy-Validator</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 简单的表单验证</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-truncate-filter</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 截断字符串的VueJS过滤器十六、服务端</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-ssr</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 结合Express使用Vue2服务端渲染nuxt.js - 用于服务器渲染Vue app的最小化框架vue-ssr - 非常简单的</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt;">VueJS服务器端渲染模板vue-easy-renderer - Nodejs服务端渲染express-vue - 简单的使用服务器端渲染vue.js</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0);"><span style="font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0); font-weight: bold;">十七、辅助工具</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">DejaVue</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- Vuejs可视化及压力测试</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-generate-component</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 轻松生成Vue js组件的CLI工具</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vscode-VueHelper</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 目前vscode最好的vue代码提示插件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-play</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 展示Vue组件的最小化框架</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">VuejsStarterKit</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- vuejs starter套件</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-multipage-cli</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 简单的多页CLI</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0);"><span style="font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0); font-weight: bold;">十八、应用实例</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">pagekit</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 轻量级的CMS建站系统</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vuedo</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 博客平台</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">koel</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 基于网络的个人音频流媒体服务</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">CMS-of-Blog</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 博客内容管理器</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-cnode</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 重写vue版cnode社区</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-ghpages-blog</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 依赖GitHub Pages无需本地生成的静态博客</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">swoole-vue-webim</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- Web版的聊天应用</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">fewords</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 功能极其简单的笔记本</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">jackblog-vue</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 个人博客系统</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-blog</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 使用Vue2.0 和Vuex的vue-blog</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">vue-dashing-js</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- nuvo-dashing-js的fork</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><span style="font-family: 微软雅黑; font-size: 11pt; color: #147191;">rss-reader</span> <span style="font-family: 微软雅黑; font-size: 11pt;">- 简单的rss阅读器</span></div>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0);"><span style="font-family: 微软雅黑; font-size: 11pt; color: rgb(173, 0, 0); font-weight: bold;">十九、Demo示例</span></div>
+		<ul style="margin-left:.375in;direction:ltr;unicode-bidi:embed; margin-top:0in;margin-bottom:0in" type="disc">
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/shinygang/Vue-cnodejs" style="font-family: 微软雅黑; font-size: 11.0pt;">Vue-cnodejs</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 基于vue重写</span>
+					<a href="http://cnodejs.org/" style="font-family: 微软雅黑; font-size: 11.0pt;">Cnodejs.org</a><span style="font-family: 微软雅黑; font-size: 11.0pt;">的webapp</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/javaSwing/NeteaseCloudWebApp" style="font-family: 微软雅黑; font-size: 11.0pt;">NeteaseCloudWebApp</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 高仿网易云音乐的webapp</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/hilongjw/vue-zhihu-daily" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-zhihu-daily</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 知乎日报 with Vuejs</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/useryangtao/vue-wechat" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-wechat</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - vue.js开发微信app界面</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/lzxb/vue2-demo" style="font-family: 微软雅黑; font-size: 11.0pt;">vue2-demo</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 从零构建vue2 + vue-router + vuex 开发环境</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/liangxiaojuan/eleme" style="font-family: 微软雅黑; font-size: 11.0pt;">eleme</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 高仿饿了么app商家详情</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/kenberkeley/vue-demo" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-demo</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - vue简易留言板</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/zhengguorong/maizuo" style="font-family: 微软雅黑; font-size: 11.0pt;">maizuo</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - vue/vuex/redux仿卖座网</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/codecasts/spa-starter-kit" style="font-family: 微软雅黑; font-size: 11.0pt;">spa-starter-kit</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 单页应用启动套件</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/Sioxas/vue-music" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-music</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - Vue 音乐搜索播放</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/jiakeqi/douban" style="font-family: 微软雅黑; font-size: 11.0pt;">douban</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 模仿豆瓣前端</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/liangxiaojuan/vue-Meizi" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-Meizi</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - vue最新实战项目</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/yatessss/zhihudaily-vue" style="font-family: 微软雅黑; font-size: 11.0pt;">zhihudaily-vue</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 知乎日报web版</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/lavyun/vue-demo-kugou" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-demo-kugou</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - vuejs仿写酷狗音乐webapp</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/SimonZhangITer/VueDemo_Sell_Eleme" style="font-family: 微软雅黑; font-size: 11.0pt;">VueDemo_Sell_Eleme</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - Vue2高仿饿了么外卖平台</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/canfoo/vue2.0-taopiaopiao" style="font-family: 微软雅黑; font-size: 11.0pt;">vue2.0-taopiaopiao</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - vue2.0与express构建淘票票页面</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/jiangjiu/vue-leancloud-blog" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-leancloud-blog</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 一个前后端完全分离的单页应用</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/yjj5855/node-vue-server-webpack" style="font-family: 微软雅黑; font-size: 11.0pt;">node-vue-server-webpack</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - Node.js+Vue.js+webpack快速开发框架</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/wendaosanshou/mi-by-vue" style="font-family: 微软雅黑; font-size: 11.0pt;">mi-by-vue</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - VueJS仿小米官网</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/okoala/vue-fis3" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-fis3</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 流行开源工具集成demo</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/superman66/vue2.x-douban" style="font-family: 微软雅黑; font-size: 11.0pt;">vue2.x-douban</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - Vue2实现简易豆瓣电影webApp</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/ChuckCZC/vue-demo-maizuo" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-demo-maizuo</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 使用Vue2全家桶仿制卖座电影</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/iHaPBoy/vue-zhihudaily" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-zhihudaily</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 知乎日报 Web 版本</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/liujians/vue-adminLte-vue-router" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-adminLte-vue-router</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - vue和adminLte整合应用</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/superman66/vue-axios-github" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-axios-github</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 登录拦截登出功能</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/pomelo-chuan/Zhihu-Daily-Vue.js" style="font-family: 微软雅黑; font-size: 11.0pt;">Zhihu-Daily-Vue.js</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - Vuejs单页网页应用</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/rokups/hello-vue-django" style="font-family: 微软雅黑; font-size: 11.0pt;">hello-vue-django</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 使用带有Django的vuejs的样板项目</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/wszgxa/vue-cnode" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-cnode</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - vue单页应用demo</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/CommanderXL/x-blog" style="font-family: 微软雅黑; font-size: 11.0pt;">x-blog</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 开源的个人blog项目</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/xrr2016/vue-express-mongodb" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-express-mongodb</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 简单的前后端分离案例</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/secreter/websocket_chat" style="font-family: 微软雅黑; font-size: 11.0pt;">websocket_chat</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 基于vue和websocket的多人在线聊天室</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/beidan/photoShare" style="font-family: 微软雅黑; font-size: 11.0pt;">photoShare</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 基于图片分享的社交平台</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/cs1707/vue-zhihudaily-2.0" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-zhihudaily-2.0</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 使用Vue2.0+vue-router+vuex创建的zhihudaily</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/lin-xin/notepad" style="font-family: 微软雅黑; font-size: 11.0pt;">notepad</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 本地存储的记事本</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/elva2596/vueBlog" style="font-family: 微软雅黑; font-size: 11.0pt;">vueBlog</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 前后端分离博客</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/hql123/vue-ruby-china" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-ruby-china</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - VueJS框架搭建的rubychina平台</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/littlewin-wang/Zhihu_Daily" style="font-family: 微软雅黑; font-size: 11.0pt;">Zhihu_Daily</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 基于Vue和Nodejs的Web单页应用</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/Molunerfinn/vue-koa-demo" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-koa-demo</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 使用Vue2和Koa1的全栈demo</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/vincentSea/vue2.x-Cnode" style="font-family: 微软雅黑; font-size: 11.0pt;">vue2.x-Cnode</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 基于vue全家桶的Cnode社区</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/shaqihe/life-app-vue" style="font-family: 微软雅黑; font-size: 11.0pt;">life-app-vue</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 使用vue2完成多功能集合到小webapp</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/SidKwok/github-explorer" style="font-family: 微软雅黑; font-size: 11.0pt;">github-explorer</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 寻找最有趣的GitHub库</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/wenye123/vue-trip" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-trip</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - vue2做的出行webapp</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/albertchan/vue-ssr-boilerplate" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-ssr-boilerplate</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 精简版的ofvue-hackernews-2</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/nswbmw/vue-bushishiren" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-bushishiren</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 不是诗人应用</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/peng1992/houtai" style="font-family: 微软雅黑; font-size: 11.0pt;">houtai</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 基于vue和Element的后台管理系统</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/QRL909109/ios7-vue" style="font-family: 微软雅黑; font-size: 11.0pt;">ios7-vue</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 使用vue2.0 vue-router vuex模拟ios7</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/tyllo/Framework7-VueJS" style="font-family: 微软雅黑; font-size: 11.0pt;">Framework7-VueJS</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 使用移动框架的示例</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/BubblyPoker/cnode-vue" style="font-family: 微软雅黑; font-size: 11.0pt;">cnode-vue</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 基于vue和vue-router构建的cnodejs web网站SPA</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/zhoou/vue-cli-multipage-bootstrap" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-cli-multipage-bootstrap</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 将vue官方在线示例整合到组件中</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/jiananle/vue-cnode" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-cnode</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 用 Vue 做的 CNode 官网</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/GitaiQAQ/HyaReader" style="font-family: 微软雅黑; font-size: 11.0pt;">HyaReader</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 移动友好的阅读器</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/xrr2016/zhihu-daily" style="font-family: 微软雅黑; font-size: 11.0pt;">zhihu-daily</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 轻松查看知乎日报内容</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/Alex-xd/seeMusic" style="font-family: 微软雅黑; font-size: 11.0pt;">seeMusic</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 跨平台云音乐播放器</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/Damonlw/vue-cnode" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-cnode</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 使用cNode社区提供的接口</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/moonou/zhihu-daily-vue" style="font-family: 微软雅黑; font-size: 11.0pt;">zhihu-daily-vue</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 知乎日报</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/sailengsi/sls-vuex2-demo" style="font-family: 微软雅黑; font-size: 11.0pt;">sls-vuex2-demo</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - vuex2商城购物车demo</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/ITCNZ/vue-dropload" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-dropload</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 用以测试下拉加载与简单路由</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/soulcm/vue-cnode-mobile" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-cnode-mobile</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 搭建cnode社区</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/fishenal/Vuejs-SalePlatform" style="font-family: 微软雅黑; font-size: 11.0pt;">Vuejs-SalePlatform</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - vuejs搭建的售卖平台demo</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/Halfeld/v-notes" style="font-family: 微软雅黑; font-size: 11.0pt;">v-notes</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 简单美观的记事本</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/BosNaufal/vue-starter" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-starter</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - VueJs项目的简单启动页</span></div>
+			</li>
+			<li style="margin-top:0;margin-bottom:0;vertical-align:middle">
+				<div>
+					<a href="https://github.com/youknowznm/vue-memo" style="font-family: 微软雅黑; font-size: 11.0pt;">vue-memo</a><span style="font-family: 微软雅黑; font-size: 11.0pt;"> - 用 vue写的记事本应用</span></div>
+			</li>
+		</ul>
+		<div style="margin: 0in; font-family: 微软雅黑; font-size: 11pt;"><br/></div>
+		</div>
+		</span>
+		</div>
+			<ul data-v-656039f0="">
+			    <h2 data-v-656039f0="">上一篇:</h2>
+				<li data-v-656039f0="">
+					<a data-v-656039f0="" href="http://itcn.3vfree.net/pages/vue_doc.html" style="font-weight: bold;">欢迎访问我的博客，一起分享 Vue 等前端技术</a>
+				</li>
+			</ul>
+	</body>
+</html>

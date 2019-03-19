@@ -1,0 +1,159 @@
+﻿<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta charset="utf-8">
+	  <basefont face="微软雅黑" size="2">
+	  <title>Vue 爬坑手册</title>
+		<style>
+			@media print {
+				#ghostery-purple-box {
+					display: none !important
+				}
+			}
+		</style>
+		<style>
+			body,
+			td {
+				font-family: 微软雅黑;
+				font-size: 10pt;
+			}
+		</style>
+		<style type="text/css">
+			#app {
+				font-family: 'Avenir', Helvetica, Arial, sans-serif;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				text-align: center;
+				color: #2c3e50;
+				margin-top: 60px;
+			}
+		</style>
+		<style type="text/css">
+			h1[data-v-656039f0],
+			h2[data-v-656039f0] {
+				font-weight: normal;
+			}
+			
+			ul[data-v-656039f0] {
+				list-style-type: none;
+				padding: 0;
+			}
+			
+			li[data-v-656039f0] {
+				display: inline-block;
+				margin: 0 10px;
+			}
+			
+			a[data-v-656039f0] {
+				color: #42b983;
+			}
+		</style>
+                <!-- built files will be auto injected -->		
+		<script src="assets/js/layui.js"></script>
+                <script src="assets/js/jquery.min.js"></script>
+                <script>
+                 $(document).ready(function(){
+                   $("center").hide();
+                   $("center").remove();
+                 });
+               </script>
+	</head>
+
+	<body>
+		<div id="app">
+			<div data-v-656039f0="">
+				<h1 data-v-656039f0=""><a name="5497"><span style="font-weight: bold;">欢迎访问我的博客，一起分享 Vue 等前端技术</span></a></h1>
+			</div>
+		</div>
+			<div data-v-656039f0="">
+				<div data-v-656039f0="" style="margin-top: 1em; margin-bottom: 1em;"><br data-v-656039f0=""></div>
+				<div data-v-656039f0="">vue-cli 是一个官方发布 vue.js 项目脚手架，使用 vue-cli 可以快速创建 vue 项目，GitHub地址是：
+					<li data-v-656039f0="">
+						<a data-v-656039f0="" href="https://github.com/vuejs/vue-cli">https://github.com/vuejs/vue-cli</a>
+					</li>
+				</div>
+				<div data-v-656039f0="" style="margin-top: 1em; margin-bottom: 1em;"><br data-v-656039f0=""></div>
+				<div data-v-656039f0="" style="margin-top: 1em; margin-bottom: 1em;"><span data-v-656039f0="" style="font-weight: bold;-en-paragraph:true;">一、 安装 node.js</span></div>
+				<div data-v-656039f0="" style="margin-top: 1em; margin-bottom: 1em;"><span data-v-656039f0="" style="-en-paragraph:true;">首先需要安装node环境，可以直接到中文官网</span>
+					<li data-v-656039f0="">
+						<a data-v-656039f0="" href="http://nodejs.cn/" style="-en-paragraph:true;" title="Node.js中文官网">http://nodejs.cn/</a>
+					</li>
+					<span data-v-656039f0="" style="-en-paragraph:true;">下载安装包。</span></div>
+				<div data-v-656039f0="" style="margin-top: 1em; margin-bottom: 1em;"><span style="-en-paragraph:true;">只是这样安装的 node 是固定版本的，如果需要多版本的 node，可以使用 nvm 安装</span>
+					<li data-v-656039f0="">
+						<a data-v-656039f0="" href="http://blog.csdn.net/s8460049/article/details/52396399" style="-en-paragraph:true;" title="Node.js 安装">http://blog.csdn.net/s8460049/article/details/52396399</a>
+					</li>
+				</div>
+				<div data-v-656039f0="" style="margin-top: 1em; margin-bottom: 1em;"><span style="-en-paragraph:true;">安装完成后，可以命令行工具中输入</span> <span style="font-size: 18px;-en-paragraph:true;">node -v</span> <span style="-en-paragraph:true;">和</span>
+					<span data-v-656039f0="" style="font-size: 18px;-en-paragraph:true;">npm -v</span><span data-v-656039f0="" style="-en-paragraph:true;">，如果能显示出版本号，就说明安装成功。</span></div>
+				<div data-v-656039f0="" style="margin-top: 1em; margin-bottom: 1em;"><span style="-en-paragraph:true;"><img src="Vue_files/36zfjm6o.bmp" type="image/bmp" data-filename="36zfjm6o.bmp"></span></div>
+				<div data-v-656039f0="" style="margin-top: 1em; margin-bottom: 1em;"><span style="font-weight: bold;-en-paragraph:true;">二、安装 vue-cli</span></div>
+				<div data-v-656039f0="" style="margin-top: 1em; margin-bottom: 1em;"><span style="-en-paragraph:true;">安装好了 node，我们可以直接全局安装 vue-cli：</span></div>
+				<div data-v-656039f0=""><span data-v-656039f0="" style="background-color: rgb(255, 250, 165);-evernote-highlight:true;"><span data-v-656039f0="" style="font-size: 12px; background-color: rgb(255, 250, 165); font-weight: bold;-evernote-highlight:true;">npm install -g vue-</span>
+				<span data-v-656039f0="" style="font-size: 12px; background-color: rgb(255, 250, 165); color: rgb(0, 0, 0); font-weight: bold;-evernote-highlight:true;">cli</span></span>
+				</div>
+				<div data-v-656039f0="" style="margin-top: 1em; margin-bottom: 1em;">
+					<span data-v-656039f0="" style="color: rgb(51, 51, 153); font-weight: bold;-en-paragraph:true;">但是这种安装方式比较慢，推荐使用国内镜像来安装</span><span style="-en-paragraph:true;">，所以我们先设置 cnpm：</span>
+				</div>
+				<div data-v-656039f0="" ><span data-v-656039f0="" style="background-color: rgb(255, 250, 165);-evernote-highlight:true;"><span data-v-656039f0="" style="font-size: 12px; background-color: rgb(255, 250, 165); font-weight: bold;-evernote-highlight:true;">npm install -g cnpm --registry=</span>
+					<span data-v-656039f0="" style="font-size: 12px; background-color: rgb(255, 250, 165); color: rgb(0, 128, 0); font-weight: bold;-evernote-highlight:true;"></span>
+					<a data-v-656039f0="" href="http://registry.npm.taobao.org/" style="font-size: 12px; background-color: rgb(255, 250, 165); color: rgb(0, 128, 0); font-weight: bold;-evernote-highlight:true;">https://registry.npm.taobao.org</a>
+					</span>
+				</div>
+				<div data-v-656039f0="" style="margin-top: 1em; margin-bottom: 1em;"><span data-v-656039f0="" style="-en-paragraph:true;">如果安装失败，可以使用</span> <span data-v-656039f0="" style="font-size: 16px; color: rgb(153, 51, 102);-en-paragraph:true;">npm cache clean</span> 
+					<span data-v-656039f0="" style="-en-paragraph:true;">清理缓存，然后再重新安装。后面的安装过程中，如有安装失败的情况，也需要先清理缓存</span></div>
+				<div data-v-656039f0="" style="margin-top: 1em; margin-bottom: 1em;"><span data-v-656039f0="" style="-en-paragraph:true;">同样可以使用</span> <span data-v-656039f0="" style="font-size: 18px;-en-paragraph:true;">cnpm -v</span> 
+					<span data-v-656039f0="" style="-en-paragraph:true;">查看是否安装成功</span></div>
+				<div data-v-656039f0="" style="margin-top: 1em; margin-bottom: 1em;"><img src="Vue_files/1yxhj2c7.bmp" type="image/bmp" data-filename="1yxhj2c7.bmp" style="font-weight: bold; font-size: 9pt;"></div>
+				<div data-v-656039f0="" style="margin-top: 1em; margin-bottom: 1em;"><span data-v-656039f0="" style="-en-paragraph:true;">然后使用 cnpm 安装 vue-cli 和 webpack</span></div>
+				<div data-v-656039f0="" ><span data-v-656039f0=""  style="background-color: rgb(255, 250, 165);-evernote-highlight:true;"><span data-v-656039f0=""  style="font-size: 12px; background-color: rgb(255, 250, 165); font-weight: bold;-evernote-highlight:true;">cnpm install -g vue-</span>
+					<span data-v-656039f0=""  style="font-size: 12px; background-color: rgb(255, 250, 165); color: rgb(0, 0, 0); font-weight: bold;-evernote-highlight:true;">cli</span></span>
+				</div>
+				<div data-v-656039f0=""  style="margin-top: 1em; margin-bottom: 1em;"><span data-v-656039f0=""  style="-en-paragraph:true;">最新的 vue 项目模板中，都带有 webpack 插件，所以这里可以不安装 webpack</span></div>
+				<div data-v-656039f0=""  style="margin-top: 1em; margin-bottom: 1em;"><span data-v-656039f0=""  style="-en-paragraph:true;">安装完成后，可以使用</span> <span  data-v-656039f0=""  style="font-size: 18px;-en-paragraph:true;">vue -V</span> 
+				<span data-v-656039f0="" style="-en-paragraph:true;">（注意 V 大写）查看是否安装成功。</span></div>
+				<div data-v-656039f0=""  style="margin-top: 1em; margin-bottom: 1em;"><img src="Vue_files/5ua45x76.bmp" type="image/bmp" data-filename="5ua45x76.bmp" style="font-weight: bold;"></div>
+				<div data-v-656039f0=""  style="margin-top: 1em; margin-bottom: 1em;"><span data-v-656039f0=""  style="-en-paragraph:true;">如果提示“无法识别 'vue' ” ，有可能是 npm 版本过低，可以使用 npm install -g npm 来更新版本</span></div>
+				<div data-v-656039f0=""  style="margin-top: 1em; margin-bottom: 1em;"><span data-v-656039f0=""  style="-en-paragraph:true;">&nbsp;</span></div>
+				<div data-v-656039f0=""  style="margin-top: 1em; margin-bottom: 1em;"><span data-v-656039f0=""  style="font-weight: bold;-en-paragraph:true;">三、生成项目</span></div>
+				<div data-v-656039f0=""  style="margin-top: 1em; margin-bottom: 1em;"><span data-v-656039f0=""  style="-en-paragraph:true;">首先需要在命令行中进入到项目目录，然后输入：</span></div>
+				<div data-v-656039f0="" ><span data-v-656039f0="" style="font-size: 12px; background-color: rgb(255, 250, 165); font-weight: bold;-evernote-highlight:true;">vue init webpack Vue-Project</span></div>
+				<div data-v-656039f0="" style="margin-top: 1em; margin-bottom: 1em;"><span data-v-656039f0="" style="-en-paragraph:true;">其中 webpack 是模板名称，可以到 vue.js 的 GitHub 上查看更多的模板</span>
+					<li data-v-656039f0="">
+						<a data-v-656039f0="" href="https://github.com/vuejs-templates" style="-en-paragraph:true;" title="Vue 模板">https://github.com/vuejs-templates</a>
+					</li>
+				</div>
+				<div data-v-656039f0="" style="margin-top: 1em; margin-bottom: 1em;"><span data-v-656039f0=""  style="-en-paragraph:true;">Vue-Project 是自定义的项目名称，命令执行之后，会在当前目录生成一个以该名称命名的项目文件夹</span></div>
+				<div data-v-656039f0="" style="margin-top: 1em; margin-bottom: 1em;"><img src="Vue_files/qbttvixj.bmp" type="image/bmp" data-filename="qbttvixj.bmp" style="font-weight: bold; font-size: 9pt;"></div>
+				<div data-v-656039f0="" style="margin-top: 1em; margin-bottom: 1em;">配置完成后，可以看到目录下多出了一个项目文件夹，里面就是 vue-cli 创建的一个基于 webpack 的 vue.js 项目</div>
+				<div data-v-656039f0="" style="margin-top: 1em; margin-bottom: 1em;"><span style="-en-paragraph:true;">然后进入项目目录（cd Vue-Project），使用 cnpm 安装依赖</span></div>
+				<div data-v-656039f0=""  ><span data-v-656039f0=""  style="font-size: 12px; background-color: rgb(255, 250, 165); font-weight: bold;-evernote-highlight:true;">cnpm install</span></div>
+				<div data-v-656039f0="" style="margin-top: 1em; margin-bottom: 1em;"><span style="-en-paragraph:true;">然后启动项目</span></div>
+				<div data-v-656039f0="" ><span data-v-656039f0=""  style="font-size: 12px; background-color: rgb(255, 250, 165); font-weight: bold;-evernote-highlight:true;">npm run dev</span></div>
+				<div data-v-656039f0=""  style="margin-top: 1em; margin-bottom: 1em;"><span style="-en-paragraph:true;">如果浏览器打开之后，没有加载出页面，有可能是本地的 8080 端口被占用，需要修改一下配置文件</span> <span style="font-size: 18px;-en-paragraph:true;">config&gt;index.js</span></div>
+				<div data-v-656039f0="" style="margin-top: 1em; margin-bottom: 1em;"><span style="-en-paragraph:true;">&nbsp;</span><img src="Vue_files/4xdvkl02.bmp" type="image/bmp" data-filename="4xdvkl02.bmp" style="font-weight: bold;"></div>
+				<div data-v-656039f0="" >建议将端口号改为不常用的端口。另外我还将 build 的路径前缀修改为 ' ./ '（原本为 ' / '），是因为打包之后，外部引入 js 和 css 文件时，如果路径以 ' / ' 开头，在本地是无法找到对应文件的（服务器上没问题）。所以如果需要在本地打开打包后的文件，就得修改文件路径。</div>
+				<div data-v-656039f0="" ><br data-v-656039f0="" ></div>
+				<div data-v-656039f0=""  style="margin-top: 1em; margin-bottom: 1em;"><span data-v-656039f0=""  style="font-weight: bold;-en-paragraph:true;">四、打包上线</span></div>
+				<div data-v-656039f0=""  style="margin-top: 1em; margin-bottom: 1em;"><span data-v-656039f0=""  style="-en-paragraph:true;">自己的项目文件都需要放到 src 文件夹下</span></div>
+				<div data-v-656039f0=""  style="margin-top: 1em; margin-bottom: 1em;"><span data-v-656039f0=""  style="-en-paragraph:true;">项目开发完成之后，可以输入 npm run build 来进行打包工作</span></div>
+				<div data-v-656039f0="" ><span data-v-656039f0=""  style="font-size: 12px;background-color: rgb(255, 250, 165);-evernote-highlight:true;"><span data-v-656039f0=""  style="background-color: rgb(255, 250, 165); font-size: 12px; font-weight: bold;-evernote-highlight:true;">npm run build</span></span>
+				</div>
+				<div data-v-656039f0=""  style="margin-top: 1em; margin-bottom: 1em;"><span data-v-656039f0=""  style="-en-paragraph:true;">打包完成后，会生成 dist 文件夹，如果已经修改了文件路径，可以直接打开本地文件查看</span></div>
+				<div data-v-656039f0="" ><span data-v-656039f0=""  style="-en-paragraph:true;">项目上线时，只需要将 dist 文件夹放到服务器就行了。</span></div>
+			</div>
+			<div data-v-656039f0="" ><br data-v-656039f0="" ></div>
+			<ul data-v-656039f0="">
+			    <h2 data-v-656039f0="">下一篇:</h2>
+				<li data-v-656039f0="">
+					<a data-v-656039f0="" href="http://itcn.3vfree.net/pages/vue_clie.html" style="font-weight: bold;">实用的vue插件大汇总</a>
+				</li>
+				<h2 data-v-656039f0="">Linke:</h2>
+				<li data-v-656039f0="">
+					<a data-v-656039f0="" href="http://www.cnblogs.com/wisewrong/" style="font-weight: bold;">http://www.cnblogs.com/wisewrong/</a>
+				</li>
+			</ul>
+	</div>
+	</body>
+</html>
